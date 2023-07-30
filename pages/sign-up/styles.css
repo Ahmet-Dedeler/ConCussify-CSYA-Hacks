@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Inter Black';
+    src: url('/fonts/Inter-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Inter ExtraBold';
+    src: url('/fonts/Inter-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Inter Bold';
+    src: url('/fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Inter Semi-Bold';
+    src: url('/fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Inter Medium';
+    src: url('/fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Inter Regular';
+    src: url('/fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Inter Light';
+    src: url('/fonts/Inter-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* Reset default styles */
+  body, h1, h2, p, ul, li, a {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  
+    p {
+      color: #7B7B7B;
+      font-family: 'Inter Regular';
+      font-size: 17px;
+    }
+  
+    h1 {
+      margin-left: -1.5px;
+      color: #323649;
+      font-size: 40px;
+      font-family: 'Inter Bold';
+      letter-spacing: -0.8px;
+    }
+  
+    h2 {
+      color: #323649;
+      font-family: 'Inter Bold';
+      font-size: 34.615px;
+    }
+  
+    h3 {
+      color: #323649;
+      font-family: 'Inter Bold';
+      font-size: 20px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  
+    .mobile {
+      background-color: #F5F5F5;
+      display: block;
+      padding-left: 10vw;
+      padding-right: 10vw;
+      padding-top: 10vw;
+      min-height: 100vh;
+    }
+    
+    .desktop {
+      display: none;
+    }
+
+    .wrapper {
+        
+    }
+  
+    @media only screen and (min-width: 600px) {
+      .mobile {
+        display: none;
+      }
+  
+      .desktop {
+        display: block;
+      }
+    }

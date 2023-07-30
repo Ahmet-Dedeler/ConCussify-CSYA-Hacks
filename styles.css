@@ -71,7 +71,23 @@ body, h1, h2, p, ul, li, a {
     margin-left: -1.5px;
     color: #323649;
     font-size: 40px;
-    font-family: 'Inter Bold'
+    font-family: 'Inter Bold';
+    line-height: 50px;
+    letter-spacing: -0.8px;
+  }
+
+  h2 {
+    color: #323649;
+    font-family: 'Inter Bold';
+    font-size: 34.615px;
+  }
+
+  h3 {
+    color: #323649;
+    font-family: 'Inter Bold';
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .mobile {
@@ -191,7 +207,7 @@ body, h1, h2, p, ul, li, a {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
-    margin-left: 5px;
+    margin-left: 0.2px;
   }
 
   .hero-top {
@@ -201,7 +217,7 @@ body, h1, h2, p, ul, li, a {
     gap: 4px;
   }
 
-  .top-description {
+  .subtitle {
     color: #4070DB;
     font-family: "Inter Bold";
     font-size: 15px;
@@ -230,6 +246,61 @@ body, h1, h2, p, ul, li, a {
     border-width: 0px;
     box-shadow: 4px 4px 12px 0px rgba(0, 51, 19, 0.20);
   }
+
+  .key-points {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    padding-top: 100px;
+  }
+
+  .key-points .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .key-points .top-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.462px;
+  }
+
+  .card-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+  }
+
+  .card {
+    width: 80vw;
+    height: fit-content;
+    min-height: 10vh;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 7px 7px 29px 0px rgba(0, 40, 15, 0.08);
+  }
+
+  .card .title {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .card p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
 
   @media only screen and (min-width: 600px) {
     .mobile {
