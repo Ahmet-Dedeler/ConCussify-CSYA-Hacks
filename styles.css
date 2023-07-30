@@ -1,0 +1,242 @@
+@font-face {
+  font-family: 'Inter Black';
+  src: url('./fonts/Inter-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter ExtraBold';
+  src: url('./fonts/Inter-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Bold';
+  src: url('./fonts/Inter-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Semi-Bold';
+  src: url('./fonts/Inter-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Medium';
+  src: url('./fonts/Inter-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Regular';
+  src: url('./fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Light';
+  src: url('./fonts/Inter-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Reset default styles */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  p {
+    color: #7B7B7B;
+    font-family: 'Inter Regular';
+    font-size: 17px;
+  }
+
+  h1 {
+    margin-left: -1.5px;
+    color: #323649;
+    font-size: 40px;
+    font-family: 'Inter Bold'
+  }
+
+  .mobile {
+    background-color: #F5F5F5;
+    display: block;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 10vw;
+    min-height: 100vh;
+  }
+  
+  .desktop {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+  }
+  
+  .hamburger {
+    position:relative;
+    display: block;
+    width:40px;
+    height:35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    z-index: 99;
+  }
+
+  .hamburger .bar, .hamburger:after, .hamburger:before {
+    position:relative;
+    content: '';
+    display: block;
+    width:100%;
+    height: 2px;
+    background-color: #323649;
+    margin: 6px 0px;
+    transition: 0.4s;
+    z-index: 99;
+  }
+
+  .hamburger.is-active:before {
+    background-color: #323649;
+    position:relative;
+    transform: rotate(-45deg) translate(-5px, 6px);
+    z-index: 99;
+  }
+
+  .hamburger.is-active:after {
+    background-color: #323649;
+    position:relative;
+    transform: rotate(45deg) translate(-6px, -6px);
+    z-index: 99;
+  }
+
+  .hamburger.is-active .bar {
+    opacity:0;
+  }
+
+  .mobile-nav {
+    position:fixed;
+    top:0;
+    left: 100%;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 98;
+    background-color: #F5F5F5;
+    transition:0.4s;
+    z-index: 98;
+  }
+
+  .mobile-nav.is-active {
+    left: 0;
+  }
+
+  .mobile-nav a {
+    font-family: 'Inter Light';
+    color:#323649;
+    text-decoration: none;
+    font-size:3.5vh;
+  }
+
+  .mobile-nav .box{
+    position: relative;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    width: 80vw;
+    height:fit-content;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    line-height: normal;
+    text-decoration: none;border-radius: 12px;
+    background: #FFF;
+    box-shadow: 7px 7px 29px 0px rgba(0, 40, 15, 0.08);
+    z-index: 98;
+  }
+
+  .hero {
+    padding-top: 10vh;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-left: 5px;
+  }
+
+  .hero-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .top-description {
+    color: #4070DB;
+    font-family: "Inter Bold";
+    font-size: 15px;
+  }
+
+  .hero .emphasis {
+    font-weight: 600;
+  }
+
+  .hero .buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .sign-up-button {
+    font-family: "Inter Bold";
+    width: fit-content;
+    padding: 18.75px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    background: #FFF;
+    stroke: none;    
+    border-width: 0px;
+    box-shadow: 4px 4px 12px 0px rgba(0, 51, 19, 0.20);
+  }
+
+  @media only screen and (min-width: 600px) {
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: block;
+    }
+  }
