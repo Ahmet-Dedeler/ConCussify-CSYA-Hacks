@@ -28,7 +28,7 @@ window.onload = function() {
             } else if (pathname.includes('post-camera')) {
                 window.location.href = '/pages/concussion-detected';
             }
-        }, 2000);
+        }, 1000);
     });
 
     // Access the device camera and stream to video element.
