@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concussify Technologies</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./favicon_logo.png">
+</head>
+<body>
+    <div class="mobile">
+        <header>
+            <nav>
+                <a href="/pages/pre-dashboard/"><img src="/public/left-arrow.svg"></a>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <div class="flex">
+                <img src="/public/baseline-complete.svg">
+                <div style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
+                    <h2>Complete</h2>
+                    <p style="text-align: center;">Congratulations! You’ve finished setting up your baseline concussion testing, and may proceed back to the dashboard.</p>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100vw; position: absolute; height: 10vh; top: 85vh; left: 0vh; display: flex; justify-content: center; align-items: center;">
+            <button class="button" onclick="window.location.href='/pages/post-dashboard/';">Dashboard</button>
+        </div>
+        <div style="position: absolute; bottom: 10vh; left:0; transform: translateY(50%);">
+        </div>
+        <script src="/main.js"></script>
+    </div>
+</body>
+</html>

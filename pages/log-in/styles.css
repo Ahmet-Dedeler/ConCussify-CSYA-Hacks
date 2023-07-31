@@ -94,8 +94,8 @@
       display: block;
       padding-left: 10vw;
       padding-right: 10vw;
-      padding-top: 10vw;
-      min-height: 100vh;
+      padding-top: 5vh;
+      min-height: 95vh;
     }
     
     .desktop {
