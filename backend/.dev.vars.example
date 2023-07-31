@@ -1,0 +1,7 @@
+# duplicate this file & rename this file for LOCAL development!
+DATABASE_URL=""
+GOOGLE_CLIENT_ID=""
+GOOGLE_CLIENT_SECRET=""
+GOOGLE_REDIRECT_URL=""
+JWT_SECRET=""  # just put this in: openssl rand -base64 32
+debug=true
