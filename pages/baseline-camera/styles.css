@@ -134,15 +134,13 @@
       box-shadow: 4px 4px 12px 0px rgba(0, 51, 19, 0.20);
     }
 
-    .card {
-      width: 80vw;
-      height: fit-content;
-      min-height: 10vh;
+    .screen { /* in same area as video element */
+      max-width: 200px;
+      max-height: 200px;
+      /* min-height: 10vh; */
       border-radius: 12px;
-      background: #FFF;
-      box-shadow: 7px 7px 29px 0px rgba(0, 40, 15, 0.08);
+      /* box-shadow: 7px 7px 29px 0px rgba(0, 40, 15, 0.08); */
     }
-  
   
     @media only screen and (min-width: 600px) {
       .mobile {

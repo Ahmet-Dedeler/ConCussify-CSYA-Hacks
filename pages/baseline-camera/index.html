@@ -16,12 +16,16 @@
         </header>
         <div class="wrapper">
             <div class="flex">
+                <h3>Capture picture!</h3>
                 <!--CAMERA GOES BELOW NOT SURE HOW TO DO-->
-                <div class="card" style="width:80vw; height: 60vh; background-color:#fff;"></div>
-                <button class="button" onclick = "window.location.href='/pages/baseline-completed';">Take Picture</button>
+                <!-- <div class="card" style="width:80vw; height: 60vh; background-color:#fff;"></div> -->
+                <video id="video" width="200" height="auto" autoplay></video>
+                <canvas id="canvas" style="display: none"></canvas>
+                <button id="take-picture-button" class="button">Take Picture</button>
             </div>
         </div>
-        <script src="/main.js"></script>
+        <script src="camera.js"></script>
+        <!-- <script src="/main.js"></script> -->
     </div>
 </body>
 </html>
