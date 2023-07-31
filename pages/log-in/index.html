@@ -17,23 +17,30 @@
         <div class="wrapper">
             <div class="flex">
                 <div class="top">
-                    <img src="/public/create-acc.svg" width="182px">
+                    <img src="/public/log-in.svg" width="280px">
                     <div class="top-bottom">
                         <h2>Welcome Back.</h2>
                         <p>Log in to Concussify!</p>
                     </div>
                 </div>
                 <div class="middle">
-                    <div class="input-box">
-                        <p>Email</p>
-                    </div>
-                    <div class="input-box">
-                        <p>Password</p>
+                    <div style="display: flex; flex-direction: column; gap: 24px;">
+                        <button class="card" style="border-width: 0px;" onclick="window.location.href='/v1/auth/google';">
+                            <div class="card-title">
+                                <div style="padding-top: 20px; padding-bottom: 20px; display: flex; justify-content: center; width: 80vw;">
+                                    <div style="display: flex; flex-direction: row; gap: 16px;">
+                                        <img src="/public/google-icon.png" height="23px">
+                                        <p style="font-family: 'Inter Bold'; color: #323649; width: fit-content;">Continue With Google</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <span style="font-family: 'Inter Regular'; font-size: 15px; color: #7B7B7B; text-align: center;">Don't have an account? <a href="/pages/sign-up">Sign Up</a></span>
                     </div>
                 </div>
-                <button onclick = "window.location.href='/pages/pre-dashboard';" class="sign-up">
+                <!--<button onclick = "window.location.href='/pages/pre-dashboard';" class="sign-up">
                     <p>Log In</p>
-                </button>
+                </button>-->
             </div>
         </div>
         <script src="/main.js"></script>
